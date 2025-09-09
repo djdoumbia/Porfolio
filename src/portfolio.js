@@ -23,10 +23,10 @@ const greeting = {
   username: "Djeneba DOUMBIA",
   title: "Hi all, I'm djeneba",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "💡 A passionate Data Enthusiast 🚀 with hands-on experience in Data Engineering, Business Intelligence, Data Analysis and Data Science, building ETL pipelines, SQL models, and interactive dashboards with tools like Python, Pandas, Power BI, Metabase, and SQL, turning raw data into actionable insights."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  //resumeLink:
+    //"https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -45,22 +45,48 @@ const socialMediaLinks = {
   display: true // Set true to display this section, defaults to false
 };
 
+// Education Section
+
+const educationInfo = {
+  display: true, // Set false to hide this section, defaults to true
+  schools: [
+    {
+      schoolName: "INP - ISIMA",
+      logo: require("./assets/images/harvardLogo.png"),
+      subHeader: "Master 1 of Science in Computer Science",
+      duration: "September 2024 - une 2025",
+      desc: "Participated in the research of XXX and published 3 papers.",
+      descBullets: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      ]
+    },
+    {
+      schoolName: "Clermont Auvergne University",
+      logo: require("./assets/images/stanfordLogo.png"),
+      subHeader: "Bachelor of Science in Computer Science",
+      duration: "September 2021 - June 2024",
+      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+    }
+  ]
+};
+
+
+
 // Skills Section
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "Master's student in Information Systems and Decision Support",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ Data analysis and exploitation to aid strategic decision-making"),
+    emoji("⚡ Design and management of information systems tailored to business needs"),
+    emoji("⚡ Development of analytical tools and data-driven decision-making solutions"),
+    emoji("⚡ Implementation of dashboards and reporting for performance monitoring")
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
+/* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
@@ -120,32 +146,7 @@ https://fontawesome.com/icons?d=gallery */
   display: true // Set false to hide this section, defaults to true
 };
 
-// Education Section
 
-const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
-  schools: [
-    {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    }
-  ]
-};
 
 // Your top 3 proficient stacks/tech experience
 
