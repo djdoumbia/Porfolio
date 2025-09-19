@@ -22,8 +22,8 @@ const illustration = {
 const greeting = {
   username: "Djeneba DOUMBIA",
   title: "Hi all, I'm djeneba",
-  subTitle: emoji(
-    "💡 A passionate Data Enthusiast 🚀 with hands-on experience in Data Engineering, Business Intelligence, Data Analysis and Data Science, building ETL pipelines, SQL models, and interactive dashboards with tools like Python, Pandas, Power BI, Metabase, and SQL, turning raw data into actionable insights."
+  subTitle:(
+    "A passionate Data Enthusiast with hands-on experience in Data Engineering, Business Intelligence, Data Analysis and Data Science, building ETL pipelines, SQL models, and interactive dashboards with tools like Python, Pandas, Power BI, Metabase, and SQL, turning raw data into actionable insights."
   ),
   //resumeLink:
     //"https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -97,76 +97,42 @@ const educationInfo = {
 
 
 
+
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "Master's student in Information Systems and Decision Support",
+  title: "Skills",
+  subTitle: "Un aperçu de mes compétences techniques et professionnelles",
   skills: [
-    emoji("⚡ Data analysis and exploitation to aid strategic decision-making"),
-    emoji("⚡ Design and management of information systems tailored to business needs"),
-    emoji("⚡ Development of analytical tools and data-driven decision-making solutions"),
-    emoji("⚡ Implementation of dashboards and reporting for performance monitoring")
+    emoji("⚡ Développement de pipelines ETL (Python, SQL, PySpark)"),
+    emoji("⚡ Création de dashboards interactifs (Power BI, Metabase, Tableau, Looker)"),
+    emoji("⚡ Gestion et modélisation de bases de données SQL et NoSQL (MySQL, PostgreSQL, MongoDB)"),
+    emoji("⚡ Déploiement Big Data et Cloud (AWS, GCP, Spark, Docker)"),
+    emoji("⚡ Développement Web (HTML, CSS, PHP, React, Node.js)"),
+    emoji("⚡ Mise en place de solutions IA et Machine Learning (Python, PyTorch, Scikit-learn)"),
+    emoji("⚡ Collaboration en gestion de projet Agile / SCRUM, Git/GitHub/GitLab")
   ],
-
-/* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    /*{
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },*/
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    /*{
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },*/
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    },
-    {
-      skillName: "Metabase",
-      fontAwesomeClassname: "fab fa-Metabase"
-    }
+    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+    { skillName: "Java", fontAwesomeClassname: "fab fa-java" },
+    { skillName: "C / C++ / Go", fontAwesomeClassname: "fas fa-code" },
+    { skillName: "SQL", fontAwesomeClassname: "fas fa-database" },
+    { skillName: "HTML5", fontAwesomeClassname: "fab fa-html5" },
+    { skillName: "CSS3", fontAwesomeClassname: "fab fa-css3-alt" },
+    { skillName: "PHP", fontAwesomeClassname: "fab fa-php" },
+    { skillName: "React", fontAwesomeClassname: "fab fa-react" },
+    { skillName: "Node.js", fontAwesomeClassname: "fab fa-node" },
+    { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
+    { skillName: "AWS", fontAwesomeClassname: "fab fa-aws" },
+    { skillName: "GCP", fontAwesomeClassname: "fab fa-google" },
+    { skillName: "Power BI", fontAwesomeClassname: "fas fa-chart-bar" },
+    { skillName: "Metabase", fontAwesomeClassname: "fas fa-chart-pie" },
+    { skillName: "Tableau", fontAwesomeClassname: "fas fa-chart-line" },
+    { skillName: "Looker", fontAwesomeClassname: "fas fa-eye" },
+    { skillName: "Git/GitHub/GitLab", fontAwesomeClassname: "fab fa-git-alt" }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 
@@ -179,6 +145,10 @@ const techStack = {
     {
       Stack: "visualisation tool ", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "Frontend ", 
+      progressPercentage: "80%"
     },
     {
       Stack: "Backend",
@@ -200,7 +170,7 @@ const workExperiences = {
     {
       role: "Data Engineer Intern ",
       company: "Acantech",
-      companylogo: require("./assets/images/acantech.png"),
+      companylogo: require("./assets/images/acantech_log.png"),
       date: "April 2025 – August 2025",
       desc: "preparation of an automated activity report based on operating data. ",
       descBullets: [
@@ -211,19 +181,34 @@ const workExperiences = {
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
+      role: "Full Stack Developer",
+      company: "Todo List Project",
+      companylogo: require("./assets/images/hdm_logo.jpeg"), // add your logo or an icon if you want
+      date: "may 2025",
+      desc: "Development of a complete Todo List application with React frontend and NestJS backend.",
+      descBullets: [
+        "Created, updated, and deleted tasks via a RESTful API (NestJS & Prisma)",
+        "Integrated frontend and backend with React (Vite) and dynamic task display",
+        "Configured MySQL database via Docker and managed Prisma migrations"
+      ],
+
+
+      footerLink: [
+        {
+          name: "source code",
+          url: "https://github.com/djdoumbia/todo-frontend"
+        },
+
+        {
+          name: "source code",
+          url: "https://github.com/djdoumbia/todo-backend"
+        }
+
+      ]
+
+      
+    },  
+
   ]
 };
 
@@ -350,7 +335,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -406,7 +391,7 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
