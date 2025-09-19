@@ -177,7 +177,7 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      Stack: "visualisation tool ", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
@@ -198,14 +198,16 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Data Engineer Intern ",
+      company: "Acantech",
+      companylogo: require("./assets/images/acantech.png"),
+      date: "April 2025 – August 2025",
+      desc: "preparation of an automated activity report based on operating data. ",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Data extraction, transformation and structuring (Python & SQL)",
+        "Analysis and visualisation (Metabase)",
+        "Implementation of an automated activity report that can be viewed via a web browse" 
+        
       ]
     },
     {
