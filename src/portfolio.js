@@ -25,9 +25,9 @@ const greeting = {
   subTitle:(
     "A passionate Data Enthusiast with hands-on experience in Data Engineering, Business Intelligence, Data Analysis and Data Science, building ETL pipelines, SQL models, and interactive dashboards with tools like Python, Pandas, Power BI, Metabase, and SQL, turning raw data into actionable insights."
   ),
-  //resumeLink:
-    //"https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+  resumeLink:
+    "https://drive.google.com/file/d/1ImXpxzrhjYublpdHO4_l6nW0Ws5jg8Zy/view?usp=drive_link", // Set to empty to hide the button
+  displayGreeting: true // Set false to hide this section, defaults to true   
 };
 
 // Social Media Links
@@ -250,7 +250,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false// Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -394,7 +394,7 @@ const twitterDetails = {
   display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
