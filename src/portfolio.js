@@ -52,7 +52,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "INP - ISIMA",
-      logo: require("./assets/images/logo_inp_isima.jpg"),
+      logo: require("./assets/images/image.png"),
       subHeader: "Master 2 of Science in Computer Science (Information Systems and Decision Support)",
       duration: "September 2025 - June 2026",
       desc: "Focused on advanced courses in decision-making algorithms and big data analysis.",
@@ -66,7 +66,7 @@ const educationInfo = {
   
     {
       schoolName: "INP - ISIMA",
-      logo: require("./assets/images/logo_inp_isima.jpg"),
+      logo: require("./assets/images/image.png"),
       subHeader: "Master 1 of Science in Computer Science",
       duration: "September 2024 - June 2025",
       desc: "Studied core subjects in computer science with a strong emphasis on data-driven systems.",
@@ -104,13 +104,22 @@ const skillsSection = {
   title: "Skills",
   subTitle: "Un aperçu de mes compétences techniques et professionnelles",
   skills: [
-    emoji("⚡ Développement de pipelines ETL (Python, SQL, PySpark)"),
-    emoji("⚡ Création de dashboards interactifs (Power BI, Metabase, Tableau, Looker)"),
-    emoji("⚡ Gestion et modélisation de bases de données SQL et NoSQL (MySQL, PostgreSQL, MongoDB)"),
-    emoji("⚡ Déploiement Big Data et Cloud (AWS, GCP, Spark, Docker)"),
-    emoji("⚡ Développement Web (HTML, CSS, PHP, React, Node.js)"),
-    emoji("⚡ Mise en place de solutions IA et Machine Learning (Python, PyTorch, Scikit-learn)"),
-    emoji("⚡ Collaboration en gestion de projet Agile / SCRUM, Git/GitHub/GitLab")
+    // emoji("⚡ Développement de pipelines ETL (Python, SQL, PySpark, Talend, dbt)"),
+    // emoji("⚡ Création de dashboards interactifs (Power BI, Metabase, Tableau, Looker)"),
+    // emoji("⚡ Gestion et modélisation de bases de données SQL et NoSQL (MySQL, PostgreSQL, MongoDB)"),
+    // emoji("⚡ Déploiement Big Data et Cloud (AWS, GCP, Spark, Docker)"),
+    // emoji("⚡ Développement Web (HTML, CSS, PHP, React, Node.js)"),
+    // emoji("⚡ Mise en place de solutions IA et Machine Learning (Python, PyTorch, Scikit-learn)"),
+    // emoji("⚡ Collaboration en gestion de projet Agile / SCRUM, Git/GitHub/GitLab")
+
+
+  emoji("⚡ Data Engineering : ETL/ELT (Python, pandas, SQL, PySpark, Talend, dbt), Streaming (Kafka)"),
+  emoji("⚡ Data Visualization & BI : Power BI, Metabase, Tableau, Looker"),
+  emoji("⚡ Bases de données : MySQL, PostgreSQL, MongoDB"),
+  emoji("⚡ Big Data & Cloud : AWS, GCP, Spark, Docker"),
+  emoji("⚡ Développement Web : HTML, CSS, PHP, React, Node.js"),
+  emoji("⚡ IA & Machine Learning : PyTorch, Scikit-learn"),
+  emoji("⚡ Méthodologies : Agile / SCRUM – Git / GitHub / GitLab")
   ],
 
   softwareSkills: [
