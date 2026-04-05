@@ -102,7 +102,7 @@ const educationInfo = {
 
 const skillsSection = {
   title: "Skills",
-  subTitle: "Un aperçu de mes compétences techniques et professionnelles",
+  subTitle: "A snapshot of my technical and professional skills",
   skills: [
     // emoji("⚡ Développement de pipelines ETL (Python, SQL, PySpark, Talend, dbt)"),
     // emoji("⚡ Création de dashboards interactifs (Power BI, Metabase, Tableau, Looker)"),
@@ -139,6 +139,9 @@ const skillsSection = {
     { skillName: "Metabase", fontAwesomeClassname: "fas fa-chart-pie" },
     { skillName: "Tableau", fontAwesomeClassname: "fas fa-chart-line" },
     { skillName: "Looker", fontAwesomeClassname: "fas fa-eye" },
+    { skillName: "Talend", fontAwesomeClassname: "fas fa-project-diagram" },
+    { skillName: "dbt", fontAwesomeClassname: "fas fa-cubes" },
+    { skillName: "Dataiku", fontAwesomeClassname: "fas fa-brain" },
     { skillName: "Git/GitHub/GitLab", fontAwesomeClassname: "fab fa-git-alt" }
   ],
   display: true
@@ -146,17 +149,17 @@ const skillsSection = {
 
 
 
-// Your top 3 proficient stacks/tech experience
+// Your top 4 proficient stacks/tech experience
 
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "visualisation tool ", //Insert stack or technology you have experience in
+      Stack: " Data Engineering ", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Frontend ", 
+      Stack: "visualisation tool ", 
       progressPercentage: "80%"
     },
     {
@@ -231,35 +234,60 @@ const openSource = {
 
 // Some big projects you have worked on
 
+// const bigProjects = {
+//   title: "Big Projects",
+//   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+//   projects: [
+//     {
+//       image: require("./assets/images/saayaHealthLogo.webp"),
+//       projectName: "Saayahealth",
+//       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+//       footerLink: [
+//         {
+//           name: "Visit Website",
+//           url: "http://saayahealth.com/"
+//         }
+//         //  you can add extra buttons here.
+//       ]
+//     },
+//     {
+//       image: require("./assets/images/nextuLogo.webp"),
+//       projectName: "Nextu",
+//       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+//       footerLink: [
+//         {
+//           name: "Visit Website",
+//           url: "http://nextu.se/"
+//         }
+//       ]
+//     }
+//   ],
+//   display: true// Set false to hide this section, defaults to true
+// };
+
+
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "Some big projects i have worked on",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/ia.webp"), // mets ton image
+      projectName: "Agent IA de diagnostic médical",
+      projectDesc:
+        "Agent IA (Streamlit + LLM Qwen2.5-72B) qui analyse des symptômes, pose des questions et indique s’il vaut mieux consulter un médecin.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
+          name: "Voir le projet",
+          url: "https://github.com/djdoumbia/IA-g-n-rative/tree/main/Projet_Agent_LLM"
+        },
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Voir la démo",
+          url: "https://huggingface.co/spaces/tadiallo3/Agent-diagnostic-ia"
         }
       ]
     }
   ],
-  display: false// Set false to hide this section, defaults to true
+  display: true
 };
 
 // Achievement Section
