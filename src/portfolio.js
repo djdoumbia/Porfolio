@@ -60,7 +60,8 @@ const educationInfo = {
         "Algorithmics for Decision Support",
         "Massive Data Analysis",
         "Data Mining & Artificial Intelligence",
-        "Decision-Making Case Studies"
+        "Decision-Making Case Studies",
+        "IA générative (Agent IA)"
       ]
     },
   
@@ -179,6 +180,20 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
+    {
+      role: "Data Engineer Intern",
+      company: "EDF  ",
+      companylogo: require("./assets/images/edf.png"),
+      date: "April 2026 – Spetember 2026",
+      desc: "Automation of reporting and decision-making processes for project steering (COPIL) in a nuclear maintenance program.",
+      descBullets: [
+        "Development of ETL pipelines (Python, SQL) to automate multi-source data extraction and transformation",
+        "Data structuring and KPI definition (budget, planning, risks) for Power BI dashboards",
+        "Optimization of existing dashboards and improvement of data reliability",
+        "Automation of PowerPoint report generation using Power Automate",
+        "Integration of AI/Copilot solutions for automated data summarization and reporting"
+      ]
+    },
     {
       role: "Data Engineer Intern ",
       company: "Acantech",
