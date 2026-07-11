@@ -221,10 +221,10 @@ const workExperiences = {
 
 
       footerLink: [
-        {
-          name: "source code",
-          url: "https://github.com/djdoumbia/todo-frontend"
-        },
+        // {
+        //   name: "source code",
+        //   url: "https://github.com/djdoumbia/todo-frontend"
+        // },
 
         {
           name: "source code",
@@ -283,20 +283,30 @@ const openSource = {
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "Some big projects i have worked on",
+  subtitle: "Some of the major projects I have worked on",
   projects: [
     {
-      image: require("./assets/images/ia.webp"), // mets ton image
-      projectName: "Agent IA de diagnostic médical",
+      image: require("./assets/images/ia.webp"),
+      projectName: "Medical AI Diagnostic Assistant",
+
       projectDesc:
-        "Agent IA (Streamlit + LLM Qwen2.5-72B) qui analyse des symptômes, pose des questions et indique s’il vaut mieux consulter un médecin.",
+        "An AI-powered conversational assistant developed to support medical symptom analysis.",
+        
+        descBullets: [
+          "Developed a conversational AI assistant in a two-person team using Large Language Models (LLMs).",
+          "Designed a Retrieval-Augmented Generation (RAG) pipeline connected to a medical knowledge base.",
+          "Built an interactive Streamlit interface for natural language symptom analysis.",
+          "Evaluated and compared BioGPT, Mistral, Qwen, and Zephyr to identify the best-performing model.",
+          "Technologies: Python • Streamlit • LLM • RAG • Prompt Engineering • Git"
+        ],
+
       footerLink: [
         {
-          name: "Voir le projet",
+          name: "Source Code",
           url: "https://github.com/djdoumbia/IA-g-n-rative/tree/main/Projet_Agent_LLM"
         },
         {
-          name: "Voir la démo",
+          name: "Live Demo",
           url: "https://huggingface.co/spaces/tadiallo3/Agent-diagnostic-ia"
         }
       ]
