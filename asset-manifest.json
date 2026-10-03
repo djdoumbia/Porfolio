@@ -1,14 +1,13 @@
 {
   "files": {
     "main.css": "/Porfolio/static/css/main.b10b2600.css",
-    "main.js": "/Porfolio/static/js/main.b170cb92.js",
+    "main.js": "/Porfolio/static/js/main.06847af0.js",
     "static/css/64.bba8fa55.chunk.css": "/Porfolio/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/Porfolio/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/Porfolio/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.bda0d7b7.chunk.js": "/Porfolio/static/js/769.bda0d7b7.chunk.js",
     "static/media/ia.webp": "/Porfolio/static/media/ia.c6d88a88bfd98752c574.webp",
     "static/media/Montserrat-Regular.ttf": "/Porfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
-    "static/media/CV_Djeneba_Doumbia_poste.pdf": "/Porfolio/static/media/CV_Djeneba_Doumbia_poste.5514e54c92c2d13103d1.pdf",
     "static/media/Agustina.woff": "/Porfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/manOnTable.svg": "/Porfolio/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
     "static/media/image.png": "/Porfolio/static/media/image.480cb8270c0be2250d1a.png",
@@ -22,7 +21,7 @@
     "index.html": "/Porfolio/index.html",
     "static/media/talksCardBack.svg": "/Porfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.b10b2600.css.map": "/Porfolio/static/css/main.b10b2600.css.map",
-    "main.b170cb92.js.map": "/Porfolio/static/js/main.b170cb92.js.map",
+    "main.06847af0.js.map": "/Porfolio/static/js/main.06847af0.js.map",
     "64.bba8fa55.chunk.css.map": "/Porfolio/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/Porfolio/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/Porfolio/static/css/769.b3cbb36b.chunk.css.map",
@@ -30,6 +29,6 @@
   },
   "entrypoints": [
     "static/css/main.b10b2600.css",
-    "static/js/main.b170cb92.js"
+    "static/js/main.06847af0.js"
   ]
 }
