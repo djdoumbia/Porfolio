@@ -179,3 +179,47 @@
   background-color: $buttonHover;
 }
 
+
+.tech-chips-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+  margin-bottom: 6px;
+}
+
+.tech-chip {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 5px 12px;
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+
+  color: #7c3aed;
+  background-color: rgba(124, 58, 237, 0.1);
+  border: 1px solid rgba(124, 58, 237, 0.35);
+
+  transition: background-color 0.2s ease, color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.tech-chip:hover {
+  background-color: #7c3aed;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.experience-card-dark .tech-chip {
+  color: #c4b5fd;
+  background-color: rgba(124, 58, 237, 0.18);
+  border-color: rgba(196, 181, 253, 0.35);
+}
+
+.experience-card-dark .tech-chip:hover {
+  background-color: #7c3aed;
+  color: #ffffff;
+}

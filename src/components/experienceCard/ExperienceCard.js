@@ -5,6 +5,7 @@ import ColorThief from "colorthief";
 export default function ExperienceCard({ cardInfo, isDark }) {
   const [colorArrays, setColorArrays] = useState([]);
   const imgRef = createRef();
+  console.log("TECHNOLOGIES:", cardInfo.technologies);
 
   function getColorArrays() {
     const colorThief = new ColorThief();
@@ -30,6 +31,20 @@ export default function ExperienceCard({ cardInfo, isDark }) {
       : null;
   };
 
+  const GetTechChips = ({ technologies }) => {
+    if (!technologies || technologies.length === 0) return null;
+
+    return (
+      <div className="tech-chips-container">
+        {technologies.map((tech, index) => (
+          <span key={index} className="tech-chip">
+            {tech}
+          </span>
+        ))}
+      </div>
+    );
+  };
+
   return (
     <div className={isDark ? "experience-card-dark" : "experience-card"}>
       <div style={{ background: rgb(colorArrays) }} className="experience-banner">
@@ -47,21 +62,46 @@ export default function ExperienceCard({ cardInfo, isDark }) {
           onLoad={() => getColorArrays()}
         />
       </div>
+
       <div className="experience-text-details">
-        <h5 className={isDark ? "experience-text-role dark-mode-text" : "experience-text-role"}>
+        <h5
+          className={
+            isDark
+              ? "experience-text-role dark-mode-text"
+              : "experience-text-role"
+          }
+        >
           {cardInfo.role}
         </h5>
-        <h5 className={isDark ? "experience-text-date dark-mode-text" : "experience-text-date"}>
+
+        <h5
+          className={
+            isDark
+              ? "experience-text-date dark-mode-text"
+              : "experience-text-date"
+          }
+        >
           {cardInfo.date}
         </h5>
-        <p className={isDark ? "subTitle experience-text-desc dark-mode-text" : "subTitle experience-text-desc"}>
+
+        <p
+          className={
+            isDark
+              ? "subTitle experience-text-desc dark-mode-text"
+              : "subTitle experience-text-desc"
+          }
+        >
           {cardInfo.desc}
         </p>
+
         <ul>
           <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
         </ul>
 
-        {/* ===== Ajout des liens GitHub / footerLink ===== */}
+        {/* ===== Badges technologies ===== */}
+        <GetTechChips technologies={cardInfo.technologies} />
+
+        {/* ===== Liens GitHub / footerLink ===== */}
         {cardInfo.footerLink && cardInfo.footerLink.length > 0 && (
           <div className="footer-links">
             {cardInfo.footerLink.map((link, index) => (

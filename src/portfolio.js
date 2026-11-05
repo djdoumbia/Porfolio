@@ -22,11 +22,12 @@ const illustration = {
 const greeting = {
   username: "Djeneba DOUMBIA",
   title: "Hi all, I'm djeneba",
-  subTitle:(
-    "A passionate Data Enthusiast with hands-on experience in Data Engineering, Business Intelligence, Data Analysis and Data Science, building ETL pipelines, SQL models, and interactive dashboards with tools like Python, Pandas, Power BI, Metabase, and SQL, turning raw data into actionable insights."
+  subTitle: (
+    "Data Engineer building scalable data platforms, automated pipelines and AI-powered reporting. " +
+    "I turn raw business data into reliable models, dashboards and decision-ready insights using Python, SQL, Databricks and Power BI."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ImXpxzrhjYublpdHO4_l6nW0Ws5jg8Zy/view?usp=drive_link", // Set to empty to hide the button
+    "https://drive.google.com/file/d/14Bgo3BTVG0Jh45KTk3nqZqovpY1M66aX/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true   
 };
 
@@ -101,78 +102,153 @@ const educationInfo = {
 
 // Skills Section
 
+// const skillsSection = {
+//   title: "Skills",
+//   subTitle: "A snapshot of my technical and professional skills",
+//   skills: [
+//     // emoji("⚡ Développement de pipelines ETL (Python, SQL, PySpark, Talend, dbt)"),
+//     // emoji("⚡ Création de dashboards interactifs (Power BI, Metabase, Tableau, Looker)"),
+//     // emoji("⚡ Gestion et modélisation de bases de données SQL et NoSQL (MySQL, PostgreSQL, MongoDB)"),
+//     // emoji("⚡ Déploiement Big Data et Cloud (AWS, GCP, Spark, Docker)"),
+//     // emoji("⚡ Développement Web (HTML, CSS, PHP, React, Node.js)"),
+//     // emoji("⚡ Mise en place de solutions IA et Machine Learning (Python, PyTorch, Scikit-learn)"),
+//     // emoji("⚡ Collaboration en gestion de projet Agile / SCRUM, Git/GitHub/GitLab")
+
+
+//   emoji("⚡ Data Engineering : ETL/ELT (Python, pandas, SQL, PySpark, Talend, dbt), Streaming (Kafka)"),
+//   emoji("⚡ Data Visualization & BI : Power BI, Metabase, Tableau, Looker"),
+//   emoji("⚡ Bases de données : MySQL, PostgreSQL, MongoDB"),
+//   emoji("⚡ Big Data & Cloud : AWS, GCP, Spark, Docker"),
+//   emoji("⚡ Développement Web : HTML, CSS, PHP, React, Node.js"),
+//   emoji("⚡ IA & Machine Learning : PyTorch, Scikit-learn"),
+//   emoji("⚡ Méthodologies : Agile / SCRUM – Git / GitHub / GitLab")
+//   ],
+
+//   softwareSkills: [
+//     { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+//     { skillName: "Java", fontAwesomeClassname: "fab fa-java" },
+//     { skillName: "C / C++ / Go", fontAwesomeClassname: "fas fa-code" },
+//     { skillName: "SQL", fontAwesomeClassname: "fas fa-database" },
+//     { skillName: "HTML5", fontAwesomeClassname: "fab fa-html5" },
+//     { skillName: "CSS3", fontAwesomeClassname: "fab fa-css3-alt" },
+//     { skillName: "PHP", fontAwesomeClassname: "fab fa-php" },
+//     { skillName: "React", fontAwesomeClassname: "fab fa-react" },
+//     { skillName: "Node.js", fontAwesomeClassname: "fab fa-node" },
+//     { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
+//     { skillName: "AWS", fontAwesomeClassname: "fab fa-aws" },
+//     { skillName: "GCP", fontAwesomeClassname: "fab fa-google" },
+//     { skillName: "Power BI", fontAwesomeClassname: "fas fa-chart-bar" },
+//     { skillName: "Metabase", fontAwesomeClassname: "fas fa-chart-pie" },
+//     { skillName: "Tableau", fontAwesomeClassname: "fas fa-chart-line" },
+//     { skillName: "Looker", fontAwesomeClassname: "fas fa-eye" },
+//     { skillName: "Talend", fontAwesomeClassname: "fas fa-project-diagram" },
+//     { skillName: "dbt", fontAwesomeClassname: "fas fa-cubes" },
+//     { skillName: "Dataiku", fontAwesomeClassname: "fas fa-brain" },
+//     { skillName: "Git/GitHub/GitLab", fontAwesomeClassname: "fab fa-git-alt" }
+//   ],
+//   display: true
+// };
+
+
+
 const skillsSection = {
-  title: "Skills",
-  subTitle: "A snapshot of my technical and professional skills",
+  title: "Technical Skills",
+  subTitle:
+    "Technologies and methodologies I use to build data platforms, automated pipelines, dashboards and AI-powered applications.",
+
   skills: [
-    // emoji("⚡ Développement de pipelines ETL (Python, SQL, PySpark, Talend, dbt)"),
-    // emoji("⚡ Création de dashboards interactifs (Power BI, Metabase, Tableau, Looker)"),
-    // emoji("⚡ Gestion et modélisation de bases de données SQL et NoSQL (MySQL, PostgreSQL, MongoDB)"),
-    // emoji("⚡ Déploiement Big Data et Cloud (AWS, GCP, Spark, Docker)"),
-    // emoji("⚡ Développement Web (HTML, CSS, PHP, React, Node.js)"),
-    // emoji("⚡ Mise en place de solutions IA et Machine Learning (Python, PyTorch, Scikit-learn)"),
-    // emoji("⚡ Collaboration en gestion de projet Agile / SCRUM, Git/GitHub/GitLab")
-
-
-  emoji("⚡ Data Engineering : ETL/ELT (Python, pandas, SQL, PySpark, Talend, dbt), Streaming (Kafka)"),
-  emoji("⚡ Data Visualization & BI : Power BI, Metabase, Tableau, Looker"),
-  emoji("⚡ Bases de données : MySQL, PostgreSQL, MongoDB"),
-  emoji("⚡ Big Data & Cloud : AWS, GCP, Spark, Docker"),
-  emoji("⚡ Développement Web : HTML, CSS, PHP, React, Node.js"),
-  emoji("⚡ IA & Machine Learning : PyTorch, Scikit-learn"),
-  emoji("⚡ Méthodologies : Agile / SCRUM – Git / GitHub / GitLab")
+    emoji(
+      "⚡ Data Engineering: ETL/ELT pipelines, data ingestion, data cleaning, data transformation and data quality"
+    ),
+    emoji(
+      "⚡ Data Modeling: relational modeling, dimensional modeling, business tables, normalized databases and analytical models"
+    ),
+    emoji(
+      "⚡ Big Data: Apache Spark, PySpark, Spark SQL, Databricks, Lakehouse architecture and distributed data processing"
+    ),
+    emoji(
+      "⚡ Cloud & Data Platforms: AWS S3, Athena, Glue, EMR, Lambda, RDS, GCP BigQuery and Google Cloud Storage"
+    ),
+    emoji(
+      "⚡ Business Intelligence: Power BI, Metabase, Tableau, Looker, KPI definition and interactive reporting"
+    ),
+    emoji(
+      "⚡ Automation: Power Automate, SharePoint, Excel, automated PowerPoint generation and workflow integration"
+    ),
+    emoji(
+      "⚡ Artificial Intelligence: LLMs, RAG, prompt engineering, AI agents, Streamlit and model evaluation"
+    ),
+    emoji(
+      "⚡ Databases: MySQL, PostgreSQL, Oracles, MongoDB, SQL queries, data normalization and database integration"
+    ),
+    emoji(
+      "⚡ Development & Collaboration: Python, SQL, Bash, REST API, FastAPI, Git, GitHub, GitLab, Agile and Scrum"
+    )
   ],
 
   softwareSkills: [
     { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
-    { skillName: "Java", fontAwesomeClassname: "fab fa-java" },
-    { skillName: "C / C++ / Go", fontAwesomeClassname: "fas fa-code" },
     { skillName: "SQL", fontAwesomeClassname: "fas fa-database" },
-    { skillName: "HTML5", fontAwesomeClassname: "fab fa-html5" },
-    { skillName: "CSS3", fontAwesomeClassname: "fab fa-css3-alt" },
-    { skillName: "PHP", fontAwesomeClassname: "fab fa-php" },
-    { skillName: "React", fontAwesomeClassname: "fab fa-react" },
-    { skillName: "Node.js", fontAwesomeClassname: "fab fa-node" },
-    { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
+    { skillName: "PySpark", fontAwesomeClassname: "fas fa-bolt" },
+    { skillName: "Apache Spark", fontAwesomeClassname: "fas fa-server" },
+    { skillName: "Databricks", fontAwesomeClassname: "fas fa-layer-group" },
+    { skillName: "Lakehouse", fontAwesomeClassname: "fas fa-database" },
     { skillName: "AWS", fontAwesomeClassname: "fab fa-aws" },
     { skillName: "GCP", fontAwesomeClassname: "fab fa-google" },
     { skillName: "Power BI", fontAwesomeClassname: "fas fa-chart-bar" },
+    { skillName: "Power Automate", fontAwesomeClassname: "fas fa-robot" },
     { skillName: "Metabase", fontAwesomeClassname: "fas fa-chart-pie" },
     { skillName: "Tableau", fontAwesomeClassname: "fas fa-chart-line" },
-    { skillName: "Looker", fontAwesomeClassname: "fas fa-eye" },
-    { skillName: "Talend", fontAwesomeClassname: "fas fa-project-diagram" },
-    { skillName: "dbt", fontAwesomeClassname: "fas fa-cubes" },
-    { skillName: "Dataiku", fontAwesomeClassname: "fas fa-brain" },
-    { skillName: "Git/GitHub/GitLab", fontAwesomeClassname: "fab fa-git-alt" }
+    { skillName: "MySQL", fontAwesomeClassname: "fas fa-database" },
+    { skillName: "PostgreSQL", fontAwesomeClassname: "fas fa-database" },
+    { skillName: "MongoDB", fontAwesomeClassname: "fas fa-leaf" },
+    { skillName: "Streamlit", fontAwesomeClassname: "fas fa-window-maximize" },
+    { skillName: "FastAPI", fontAwesomeClassname: "fas fa-code" },
+    { skillName: "Git / GitHub / GitLab", fontAwesomeClassname: "fab fa-git-alt" }
   ],
+
   display: true
 };
+
+
+
+
 
 
 
 // Your top 4 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true,
+
   experience: [
     {
-      Stack: " Data Engineering ", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Data Engineering & ETL",
+      progressPercentage: "90%"
     },
     {
-      Stack: "visualisation tool ", 
+      Stack: "Data Modeling & SQL",
+      progressPercentage: "85%"
+    },
+    {
+      Stack: "Business Intelligence & Reporting",
+      progressPercentage: "85%"
+    },
+    {
+      Stack: "Python & Data Analysis",
       progressPercentage: "80%"
     },
     {
-      Stack: "Backend",
+      Stack: "Big Data & Cloud",
       progressPercentage: "70%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Artificial Intelligence & LLM Applications",
+      progressPercentage: "70%"
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+
+  displayCodersrank: true
 };
 
 // Work experience section
@@ -182,42 +258,113 @@ const workExperiences = {
   experience: [
     {
       role: "Data Engineer Intern",
-      company: "EDF  ",
+      company: "EDF",
       companylogo: require("./assets/images/edf.png"),
-      date: "April 2026 – Spetember 2026",
-      desc: "Automation of reporting and decision-making processes for project steering (COPIL) in a nuclear maintenance program.",
+      date: "April 2026 – September 2026",
+
+      desc:
+        "Contribution to a data and AI-oriented project dedicated to the automation of project steering and COPIL reporting in a nuclear maintenance environment.",
+
       descBullets: [
-        "Development of ETL pipelines (Python, SQL) to automate multi-source data extraction and transformation",
-        "Data structuring and KPI definition (budget, planning, risks) for Power BI dashboards",
-        "Optimization of existing dashboards and improvement of data reliability",
-        "Automation of PowerPoint report generation using Power Automate",
-        "Integration of AI/Copilot solutions for automated data summarization and reporting"
+        "Designed Lakehouse data models in Databricks to structure project, risk, planning and action data.",
+        "Developed Python/SQL pipelines to automate data ingestion, transformation and preparation.",
+        "Created curated datasets and optimized Power BI reports for project monitoring and decision-making.",
+        "Automated COPIL reporting workflows with Power Automate, SharePoint, Excel and PowerPoint generation.",
+        "Contributed to a Copilot Studio AI agent for assisted generation of project-steering materials."
+      ],
+
+      technologies: [
+        "Databricks", "Lakehouse", "Python", "SQL",
+        "Power BI", "Power Automate", "Copilot Studio",
+        "SharePoint", "Excel"
+      ],
+
+      footerLink: [
+        // {
+        //   name: "source code",
+        //   url: "https://github.com/djdoumbia/todo-frontend"
+        // },
+
+        {
+          name:"Technologies: Databricks • Lakehouse • Python • SQL • Power BI • Power Automate • Copilot Studio • SharePoint • Excel"
+,
+          // url: "https://github.com/djdoumbia/todo-backend"
+        }
+
       ]
     },
     {
-      role: "Data Engineer Intern ",
+
+      role: "Data Analyst Intern",
       company: "Acantech",
       companylogo: require("./assets/images/acantech_log.png"),
       date: "April 2025 – August 2025",
-      desc: "preparation of an automated activity report based on operating data. ",
+
+      desc:
+        "Development of a data processing and reporting solution based on hotel operating data extracted from a Property Management System.",
+
       descBullets: [
-        "Data extraction, transformation and structuring (Python & SQL)",
-        "Analysis and visualisation (Metabase)",
-        "Implementation of an automated activity report that can be viewed via a web browse" 
-        
+        "Analyzed the structure and complexity of JSON files generated by the hotel management system.",
+        "Developed a Python ETL pipeline to extract, transform and prepare operational data.",
+        "Handled nested and multi-level JSON structures to make the data easier to query and analyze.",
+        "Performed data cleaning, restructuring and standardization before loading the data into a relational database.",
+        "Designed and populated a normalized MySQL database to store the transformed information.",
+        "Used SQL queries to validate data consistency and prepare analytical datasets.",
+        "Created interactive Metabase dashboards to monitor key operational indicators.",
+        "Used Metabase’s SQL query builder to automate recurring analyses.",
+        "Improved the accessibility of operational information through a web-based reporting interface."
+      ],
+
+      technologies: [
+        "Python",
+        "Pandas",
+        "SQL",
+        "MySQL",
+        "JSON",
+        "ETL",
+        "Data Cleaning",
+        "Data Modeling",
+        "Metabase"
       ]
+
+      // role: "Data Engineer Intern ",
+      // company: "Acantech",
+      // companylogo: require("./assets/images/acantech_log.png"),
+      // date: "April 2025 – August 2025",
+      // desc: "preparation of an automated activity report based on operating data. ",
+      // descBullets: [
+      //   "Data extraction, transformation and structuring (Python & SQL)",
+      //   "Analysis and visualisation (Metabase)",
+      //   "Implementation of an automated activity report that can be viewed via a web browse" 
+        
+      // ]
     },
     {
+
       role: "Full Stack Developer",
-      company: "Todo List Project",
-      companylogo: require("./assets/images/hdm_logo.jpeg"), // add your logo or an icon if you want
-      date: "may 2025",
-      desc: "Development of a complete Todo List application with React frontend and NestJS backend.",
+      company: "Todo List Application",
+      companylogo: require("./assets/images/hdm_logo.jpeg"),
+      date: "May 2025",
+
+      desc:
+        "Development of a full-stack task management application with a React frontend, a NestJS backend and a MySQL database.",
+
       descBullets: [
-        "Created, updated, and deleted tasks via a RESTful API (NestJS & Prisma)",
-        "Integrated frontend and backend with React (Vite) and dynamic task display",
-        "Configured MySQL database via Docker and managed Prisma migrations"
+        "Designed and implemented a REST API with NestJS.",
+        "Implemented task creation, update, deletion and retrieval functionalities.",
+        "Used Prisma as an ORM to communicate with the database.",
+        "Developed a dynamic React interface with Vite.",
+        "Connected the frontend to the backend through REST API requests.",
+        "Configured a MySQL database using Docker.",
+        "Managed database schema evolution through Prisma migrations.",
+        "Organized the source code into separate frontend and backend repositories.",
+        "Technologies: React • Vite • NestJS • Prisma • MySQL • Docker • REST API • Git"
       ],
+
+      technologies: [
+      "React", "Vite", "NestJS", "Prisma",
+      "MySQL", "Docker", "REST API", "Git"
+    ],
 
 
       footerLink: [
@@ -310,6 +457,31 @@ const bigProjects = {
           url: "https://huggingface.co/spaces/tadiallo3/Agent-diagnostic-ia"
         }
       ]
+    },
+
+
+
+    {
+  
+     
+      // date: "2024 – 3 months",
+
+      image: require("./assets/images/logo_uca.png"),
+      projectName: "Projet acacdémique Data Scientist",
+
+      projectDesc:
+        "Development of a machine learning model to evaluate customer creditworthiness and classify default risk.",
+
+      descBullets: [
+        "Collected, explored and prepared a customer dataset for a binary classification problem.",
+        "Performed data cleaning, exploratory analysis and feature preparation.",
+        "Developed a decision tree model to classify customers according to their risk of default.",
+        "Optimized model hyperparameters to improve predictive performance.",
+        "Evaluated the model using the AUC-ROC metric, confusion matrix and classification metrics.",
+        "Analyzed model errors and interpreted the factors influencing classification results.",
+        "Produced visual analyses using Seaborn and Matplotlib."
+      ],
+      desc: "Technologies: Python • Pandas • NumPy • Scikit-learn • Seaborn • Matplotlib • Jupyter Notebook",
     }
   ],
   display: true
